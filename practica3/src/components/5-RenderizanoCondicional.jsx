@@ -18,7 +18,7 @@ function NumerRandom() {
     return Math.floor(Math.random() * 2)
 }
 
-if (NumerRandom() == 1) {
+if (NumerRandom() === 1) {
     imagenAElegir = imagenThorfin
 
 } else {

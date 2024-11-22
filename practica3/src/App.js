@@ -1,30 +1,23 @@
 
 import './App.css';
-import {MostrarImagen} from './components/5-RenderizanoCondicional.jsx';
+import CrearYanidarComponentes from './components/1-CrearYanidarComponentes.jsx';
+import EscribirMarcadoConJSX from './components/2-EscribirMarcadoConJSX';
+import AñadirEstilos from './components/3-AñadirEstilos.jsx';
+import MostrarDatos from './components/4-MostrarDatos.jsx';
+import RenderizanoCondicional from './components/5-RenderizanoCondicional.jsx';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <MyButton />
-        <SoyUnComponente />
-        <MostrarImagen />
+        <CrearYanidarComponentes />
+        <EscribirMarcadoConJSX />
+        <MostrarDatos />
+        <AñadirEstilos />
+        <RenderizanoCondicional />
       </header>
     </div>
   );
-}
-
-let nombre = "Franco"
-
-function MyButton() {
-  return (
-    <button>Soy un boton</button>
-  )
-}
-function SoyUnComponente() {
-  return (
-    <h1 className='saludo'>H0la {nombre}</h1>
-  )
 }
 
 export default App;
