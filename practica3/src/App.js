@@ -9,8 +9,21 @@ import RenderizandoLista from './components/6-RenderizandoLista.jsx';
 import ResponderAEventos from './components/7-ResponderAEventos.jsx';
 import ActualizarLaPantalla from './components/8-ActualizarLaPantalla.jsx';
 import ElUsoDeHooks from './components/9-ElUsoDeHooks.jsx';
+import CompartirDatosEntreComponentes from './components/10-CompartirDatosEntreComponentes.jsx';
+
+/* para el paso 10 */
+import React, {useState} from 'react';
+/* cierre del paso 10 */
 
 function App() {
+
+  /* para el paso 10 */
+  let [count , setCount] = useState(0)
+  function tocar() {
+      setCount(count + 1)
+  }
+  /* cierre del paso 10 */
+
   return (
     <div className="App">
       <header className="App-header">
@@ -33,6 +46,9 @@ function App() {
         <ActualizarLaPantalla />
         {/* 9 */}
         <ElUsoDeHooks />
+        {/* 10 */}
+        <CompartirDatosEntreComponentes count={count} tocar={tocar} />
+        <CompartirDatosEntreComponentes count={count} tocar={tocar} />
 
       </header>
     </div>
